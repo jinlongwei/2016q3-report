@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+
+    body {
+      font-family: Hiragino Sans GB,Arial,Helvetica,\\E5\AE\2039\E4\BD\201C,sans-serif;;
+    }
+    h1, h2, h3 {
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    .remark-slide-content h1 { font-size: 3em; }
+    .remark-slide-content h2 { font-size: 2em; }
+    .remark-slide-content h3 { font-size: 1.6em; }
+    .footnote {
+      position: absolute;
+      bottom: 3em;
+    }
+    li p { line-height: 1.25em; }
+    .red { color: #fa0000; }
+    .large { font-size: 2em; }
+    a, a > code {
+      color: rgb(249, 38, 114);
+      text-decoration: none;
+    }
+    code {
+      background: #e7e8e2;
+      border-radius: 5px;
+    }
+    .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    .remark-code-line-highlighted     { background-color: #373832; }
+    .pull-left {
+      float: left;
+      width: 47%;
+    }
+    .pull-right {
+      float: right;
+      width: 47%;
+    }
+    .pull-right ~ p {
+      clear: both;
+    }
+    #slideshow .slide .content code {
+      font-size: 0.8em;
+    }
+    #slideshow .slide .content pre code {
+      font-size: 0.9em;
+      padding: 15px;
+    }
+    .inverse {
+      background: #272822;
+      color: #777872;
+      text-shadow: 0 0 20px #333;
+    }
+    .inverse h1, .inverse h2 {
+      color: #f3f3f3;
+      line-height: 0.8em;
+    }
+    img{
+      width: auto;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      max-width: 100%;
+    }
+
+    /* Slide-specific styling */
+    #slide-inverse .footnote {
+      bottom: 12px;
+      left: 20px;
+    }
+    #slide-how .slides {
+      font-size: 0.9em;
+      position: absolute;
+      top:  151px;
+      right: 140px;
+    }
+    #slide-how .slides h3 {
+      margin-top: 0.2em;
+    }
+    #slide-how .slides .first, #slide-how .slides .second {
+      padding: 1px 20px;
+      height: 90px;
+      width: 120px;
+      -moz-box-shadow: 0 0 10px #777;
+      -webkit-box-shadow: 0 0 10px #777;
+      box-shadow: 0 0 10px #777;
+    }
+    #slide-how .slides .first {
+      background: #fff;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      z-index: 1;
+    }
+    #slide-how .slides .second {
+      position: relative;
+      background: #fff;
+      z-index: 0;
+    }
+
+    /* Two-column layout */
+    .left-column {
+      color: #777;
+      width: 20%;
+      height: 92%;
+      float: left;
+    }
+      .left-column h2:last-of-type, .left-column h3:last-child {
+        color: #000;
+      }
+    .right-column {
+      width: 75%;
+      float: right;
+      padding-top: 1em;
+    }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class:
+
+---
+
+## 佘达轩
+
+* 到店综合事业群用户与营销技术部
+
+* 目标层级：P3-2
+
+
+---
+
+
+## 经历
+
+*  2012 - 2013，阿里巴巴B2B中国站商品平台
+
+*  2013 - 2015，原点评交易平台交易前台前端
+
+*  2015 至今，到店综合事业群用户与营销技术部前端
+
+---
+
+## 主要业绩
+
+* 原点评的H5+appcache动静分离开发体系
+* 原点评的前端监控体系，包括性能和错误监控
+* 原点评的移动样式规范库
+* 到店综合营销平台前端组件规范和页面生成流程
+* 到店综合C端前端开发框架和规范
+* 到店综合双C端4场景开发工作流
+
+目前负责的业务：到综营销平台
+
+
+---
+
+## 大纲
+
+主要在以下方面体现我的技术能力
+
+* 到综营销平台活动配置
+
+* 双C端4场景开发工作流
+
+---
+
+
+## 营销平台活动配置一期
+
+项目背景：
+* 满足到综7个BU的运营和部分公共产品需求
+
+业界方案：
+* 业界方案，大量配置实现，只能控制颜色，位置
+* 有一个特殊的开发规范，为了平台开发组件
+
+自建营销平台的原因：
+* 到综的活动更重视内容展示质量
+* 有很多点评历史上的组件各个BU想直接使用
+* 后端提供BG级别预算控制，活动统计
+
+项目成果：
+* 通过营销平台配置的活动，平均每周20个，其中平均15个是点评侧活动，5个是美团侧活动
+
+
+
+---
+
+## 营销平台活动配置一期（cont.)
+
+一期的彩虹营销系统，目的是去掉开发套路中的前后端开发节点
+
+![套路](./images/taolu-form-1.svg)
+
+组成
+- 前端组件
+- 前端页面生成服务
+- 模板配置界面
+- 运营组件配置页面
+
+---
+
+## 营销平台活动配置一期（cont.)
+
+配置界面
+
+![套路](./images/capture.png)
+
+
+---
+
+## 营销平台活动配置一期（cont.)
+
+前端页面架构
+
+![套路](./images/arche.svg)
+
+* 兼容多个技术栈
+* 多个组件js动态combo打包
+
+---
+
+## 营销平台活动配置一期（cont.)
+
+一期的产出，看8月
+
+![套路](./images/result1.png)
+
+通过配置的活动占约80%
+
+---
+
+## 营销平台活动配置二期（cont.）
+
+一期项目实施过程中，发现有一些场景解决很费劲
+
+具体挑战：
+- 同样的领券的业务逻辑，样式不同
+- 领券的业务逻辑一样，但弹窗流程与内置的不一样；
+- 或者领券的业务逻辑一样，但触发要变成整个图片可点；
+- 领券业务逻辑改成输入手机领实物奖，但弹窗流程一样
+- 大转盘要实现视觉的很细微要求，但同时要公用
+- 一个需求，部分可以用组件，但另外有无法使用组件要开发的部分
+- 对于在产品页面上挂一个运营模块的需求，只能开发两次
+- 页面上需要配置两个tab
+
+
+
+---
+
+## 营销平台活动配置二期
+
+后果：
+- 同类组件重复
+- 配置繁多
+- 开发工作转移到组件上
+- 与正常开发技术栈不同难以共存
+- 组件平铺，一个页面不能支持同类消息存在
+
+---
+
+## 营销平台活动配置二期（cont.)
+
+分析：流程上有不畅顺的地方
+
+![套路](./images/actual-form-1.svg)
+
+---
+
+## 营销平台活动配置二期（cont.)
+
+分析：还有架构也存在问题
+
+![套路](./images/arche-general.svg)
+
+
+---
+
+## 营销平台活动配置二期（cont.)
+
+项目成果：
+* 通过开发上线页面的过程，2小时内搞定
+* 改样式只需要配置一个皮肤名，不需要开配置
+* 运营需要接触的配置从30多个，减少到一两个
+* 不再产生多个相似业务的组件
+
+---
+
+## 营销平台活动配置二期（cont.)
+
+如何实现：统一技术栈
+
+统一之后的架构如下，覆盖营销和产品需求
+
+![套路](./images/arche-new.svg)
+
+---
+
+
+## 营销平台活动配置二期（cont.)
+
+组件结构上，支持遵循web component标准的嵌套
+
+![套路](./images/slot.svg)
+
+- 每个组件仅关注单一业务逻辑
+
+---
+
+
+## 营销平台活动配置二期（cont.)
+
+组件嵌套组成组件块注册到营销平台
+
+![套路](./images/flagment.svg)
+
+组件块包括：
+- 组件关系
+- 预设配置
+- 预设皮肤
+
+---
+
+
+## 营销平台活动配置二期（cont.)
+
+组件块生成和注册界面
+
+![套路](./images/vcw.png)
+
+---
+
+## 营销平台活动配置二期（cont.)
+
+营销平台中组件块使用界面
+
+![套路](./images/.png)
+
+---
+
+
+## 营销平台活动配置二期（cont.)
+
+为了支持在这个技术栈上自定义拼接，我们自己搭建jenkins跑CI
+
+
+---
+
+
+## 营销平台活动配置二期（cont.)
+
+后续规划：
+
+- vue2.0 的同构应用
+- vue-rainbow中加入vuex状态管理
+- 组件配置描述从代码解耦
+
+
+
+---
+
+
+## 双C端4场景工作流（cont.)
+
+项目背景：
+- 要求双APP同时支持微信分享之后正确区分i站和m站
+- 美团用户发美团券，点评用户发点评券
+- 打点能正确区分来源
+
+已有方案：
+- KNB可以支持双APP
+- 中间页面可以在m站校验美团登录态
+- 支持双C分享
+
+已有方案的问题：
+- 不解决打点来源错误的问题
+- 微信不能唤起i站登录
+- 微信和浏览器环境无法使用美团的定位和cityid
+- 每次需求都要处理一次这一系列问题
+
+---
+
+## 双C端4场景工作流（cont.)
+
+产出：
+- 判断环境，定位，登录，接口匹配，支持双C4场景
+- 打点正确筛选数据
+
+
+---
+
+
+## 双C端4场景工作流（cont.)
+
+思路：
+- 彻底隔离mt和dp
+- 推进平台解决定位等公共技术问题
+
+![套路](./images/dc.svg)
+
+---
+
+
+    </textarea>
+    <script src="./js/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
+    </script>
+  </body>
+</html>
